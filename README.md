@@ -77,9 +77,7 @@ feedback-app/
 
 This app can be deployed on platforms like:
 
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://feedbackforservice.netlify.app/)
 
 ### 📦 Deploy on Netlify
 
