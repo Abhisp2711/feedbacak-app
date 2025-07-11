@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+# 💬 Feedback App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that allows users to submit feedback with a rating. The feedback is displayed in a list with options to delete, and the overall statistics are also shown.
 
-## Available Scripts
+## 🚀 Live Demo
+
+👉 [Your Netlify Link Here](https://your-app.netlify.app)
+
+## 🛠️ Built With
+
+- React (with Hooks)
+- React Router DOM
+- Context API (for global state)
+- UUID (to generate unique feedback IDs)
+- Framer Motion (animations)
+- Custom CSS
+
+---
+
+## 📦 Available Scripts
 
 In the project directory, you can run:
 
@@ -11,60 +26,82 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production in the `build/` folder.\
+Optimizes the build for best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `serve -s build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serve the production build locally (after running `npm run build`).\
+Install the tool with: `npm install -g serve`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Submit feedback with text and rating
+- Animated feedback list (using Framer Motion)
+- Realtime statistics of feedback (average rating, total)
+- Delete feedback items
+- Routing between Home and About pages
+- Floating "About" icon on the bottom-right
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Folder Structure (Main)
 
-## Learn More
+feedback-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── FeedbackForm.jsx
+│ │ ├── FeedbackList.jsx
+│ │ ├── FeedbackItem.jsx
+│ │ ├── FeedbackStats.jsx
+│ │ ├── AboutIconLink.jsx
+│ │ ├── Footer.jsx
+│ │ └── Header.jsx
+│ ├── context/
+│ │ └── FeedbackContext.jsx
+│ ├── pages/
+│ │ └── About.jsx
+│ ├── data/
+│ │ └── FeedbackData.js
+│ ├── App.jsx
+│ └── index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌐 Deployment
 
-### Code Splitting
+This app can be deployed on platforms like:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [GitHub Pages](https://pages.github.com/)
 
-### Analyzing the Bundle Size
+### 📦 Deploy on Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Run `npm run build`
+2. Drag the `/build` folder into Netlify’s deploy window
+3. Or connect to GitHub and set:
+   - Build command: `npm run build`
+   - Publish directory: `build`
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📚 Learn More
 
-### Advanced Configuration
+- [React Docs](https://reactjs.org/)
+- [Create React App Docs](https://create-react-app.dev/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Router](https://reactrouter.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🧑‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Built with ❤️ by **[Your Name Here]**
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
