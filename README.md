@@ -51,6 +51,7 @@ Install the tool with: `npm install -g serve`
 
 ## 📁 Folder Structure (Main)
 
+```
 feedback-app/
 ├── public/
 ├── src/
@@ -72,6 +73,7 @@ feedback-app/
 │ └── index.js
 
 ---
+```
 
 ## 🌐 Deployment
 
@@ -100,6 +102,6 @@ This app can be deployed on platforms like:
 
 ## 🧑‍💻 Author
 
-Built with ❤️ by **[Your Name Here]**
+Built with ❤️ by **Abhishek kumar singh**
 
 ---
